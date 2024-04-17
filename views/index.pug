@@ -1,0 +1,55 @@
+doctype html 
+html 
+  head 
+    title Siddhika's Dance Academy 
+    style 
+      include ../static/style.css 
+  body 
+    nav#navbar 
+      ul 
+        div#logo
+          img(src="/static/img/nn.webp") 
+          | SDA
+        li #[a(href= "/home") Home ]
+        li #[a(href= "/") About]
+        li #[a(href= "/") Services ]
+        li #[a(href= "/") Class Info ]
+        li #[a(href= "/contact") Contact Us]
+    section#introsection 
+      div Welcome To Siddhika's Dance Academy
+      div.small Eat Sleep Dance Repeat
+    section#missionSection
+      h2 Our Mission 
+      div.card
+        h3 Sassy Dance 
+        div.card-box
+          div.card-img
+            img(src="/static/img/im.webp")
+          div.card-content
+            p Learn sassy dance form with us!
+      div.card
+        h3 Hip Hop - Clasic
+        div.card-box
+          div.card-img
+            img(src="/static/img/wo.webp")
+          div.card-content
+            p Learn hip-hop clasic dance form with us!
+      div.card
+        h3 Indian Folk 
+        div.card-box
+          div.card-img
+            img(src="/static/img/ind.webp")
+          div.card-content
+            p Learn indian folk dance form with us! 
+    section#sponsorsSection 
+      h2 Our Sponsors
+      div#sponsors
+        img(src="/static/img/in.webp", alt="Sponsors image", class="spImage")
+        img(src="/static/img/t.webp", alt="Sponsors image", class="spImage")
+        img(src="/static/img/ti.webp", alt="Sponsors image", class="spImage")
+        img(src="/static/img/no.webp", alt="Sponsors image", class="spImage")
+    footer#footer 
+      | Copyright © 2023 SiddhikaDanceAcademy.com | All rights reserved
+    script 
+      include ../static/index.js  
+      
